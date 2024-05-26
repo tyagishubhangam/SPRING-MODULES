@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ page isELIgnored = "false"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Welcome to spring mvc </h1>
-<a href = "helloPage"><button>Open Hello Page</button></a>
-<a href = "aboutUs"><button>About us</button></a>
-<a href = "myForm"><button>MY Form</button></a>
+<h1>WELCOME USER</h1>
+<h3>NAME: ${model_user.getName()}</h3>
+<h3>PHONE: ${model_user.getPhonenum()}</h3>
+<h3>EMAIL: ${model_user.getEmail()}</h3>
+<h3>CITY: ${model_user.getCity()}</h3>
 </body>
 </html>
